@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Delta Force Ahsarah Card Collection Tracker – Track Missing Poker Cards</title>
+<title>Delta Force Ahsarah Card Collection Tracker – Track Missing Ahsarah Cards</title>
 <meta name="description" content="Free tracker for the Delta Force Ahsarah poker card collection. Mark the 54 cards (52 playing cards and 2 jokers) you own, see which are missing, and fill your Card Box. Progress is saved in your browser.">
 <meta name="keywords" content="Delta Force, Ahsarah cards, poker card collection, card box, card tracker, missing cards, Delta Force collectibles">
 <meta name="robots" content="index, follow">
@@ -49,9 +49,13 @@
       </div>
     </div>
     <div class="ctl">
-      <div id="gt" class="notranslate" translate="no"></div>
+      <div class="lang notranslate" translate="no">
+        <button class="langbtn" id="langBtn" aria-haspopup="listbox" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg><span id="langName">English</span><em>▾</em></button>
+        <ul class="langmenu" id="langMenu" role="listbox"></ul>
+        <div id="gt" class="gt-hidden"></div>
+      </div>
       <div class="filters">
-        <div class="seg" id="sort"><button data-v="up" class="on">Suit ↑</button><button data-v="down">Suit ↓</button></div>
+        <div class="seg" id="sort"><button data-v="suit" class="on">Suit ↑</button><button data-v="rank">Rank ↑</button></div>
         <div class="seg" id="disp"><button data-v="all" class="on">All</button><button data-v="have">Collected</button><button data-v="missing">Not collected</button></div>
       </div>
     </div>
