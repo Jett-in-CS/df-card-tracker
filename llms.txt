@@ -1,0 +1,6 @@
+# Delta Force Ahsarah Card Collection Tracker
+
+> Free single-page web tool to track the Ahsarah poker card collection in Delta Force. The Card Box holds 54 non-duplicate cards: 52 playing cards (Spades, Hearts, Clubs, Diamonds; Ace to King) plus a Small Joker and a Big Joker. Users click a card to mark it collected; progress is stored locally in the browser.
+
+- Filters: sort by suit (up/down); display All, Collected or Not collected.
+- Rarity: Ace = Rare, 2-10 = Common, Jack/Queen/King = Uncommon, Small Joker = Epic, Big Joker = Legendary.

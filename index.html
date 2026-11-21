@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Delta Force Ahsarah Card Collection Tracker – Track Missing Poker Cards</title>
+<meta name="description" content="Free tracker for the Delta Force Ahsarah poker card collection. Mark the 54 cards (52 playing cards and 2 jokers) you own, see which are missing, and fill your Card Box. Progress is saved in your browser.">
+<meta name="keywords" content="Delta Force, Ahsarah cards, poker card collection, card box, card tracker, missing cards, Delta Force collectibles">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Delta Force Ahsarah Card Collection Tracker">
+<meta property="og:description" content="Track which of the 54 Ahsarah poker cards you have collected in Delta Force and which are still missing.">
+<meta property="og:image" content="imgs/15209500055.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Delta Force Ahsarah Card Collection Tracker">
+<meta name="twitter:description" content="Track which of the 54 Ahsarah poker cards you have collected in Delta Force and which are still missing.">
+<link rel="icon" href="imgs/15209500055.png">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Delta Force Ahsarah Card Collection Tracker",
+  "description": "A free web tool to track the Delta Force Ahsarah poker card collection: 52 playing cards plus 2 jokers, stored in a Card Box with 54 slots. Progress is saved locally in the browser.",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Any (web browser)",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "about": {"@type": "VideoGame", "name": "Delta Force"}
+}
+</script>
+</head>
+<body>
+<main class="wrap">
+  <header class="intro">
+    <h1>Delta Force Ahsarah Card Collection Tracker</h1>
+    <p>Keep track of the Ahsarah poker cards you have collected in Delta Force. The Card Box holds 54 non-duplicate cards: the 52 playing cards (Spades, Hearts, Clubs, Diamonds) plus the Small and Big Joker. Click a card to mark it as collected. Your progress is saved in your browser.</p>
+  </header>
+
+  <section class="top" aria-label="Progress and filters">
+    <div class="box">
+      <img id="boxImg" src="imgs/15209500055.png" alt="Ahsarah Card Box">
+      <div class="info">
+        <div class="line"><b id="count">0/54</b><small id="pct">0% collected</small>
+          <button class="trash" id="trash" title="Reset progress" aria-label="Reset progress"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg></button>
+        </div>
+        <div class="bar"><i id="fill"></i></div>
+      </div>
+    </div>
+    <div class="ctl">
+      <div id="gt" class="notranslate" translate="no"></div>
+      <div class="filters">
+        <div class="seg" id="sort"><button data-v="up" class="on">Suit ↑</button><button data-v="down">Suit ↓</button></div>
+        <div class="seg" id="disp"><button data-v="all" class="on">All</button><button data-v="have">Collected</button><button data-v="missing">Not collected</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid" id="grid" aria-label="Card list"></section>
+  <noscript><p>This tracker needs JavaScript enabled to display and save your card collection.</p></noscript>
+</main>
+
+<div class="modal" id="modal"><div class="dlg" role="dialog" aria-modal="true">
+  <h3>Reset everything?</h3>
+  <p>All your collected cards will be cleared. This can't be undone.</p>
+  <div class="row"><button id="no">Cancel</button><button class="del" id="yes">Reset</button></div>
+</div></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
